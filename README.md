@@ -1,2 +1,2 @@
-# Object-Tracking-Algorithms
-A collection of object tracking algorithms based on OpenCV. These include motion tracking algorithms and in the end, the way to track a user defined object/ multiple objects.
+# Computer-Vision-Object-Tracking-with-OpenCV-and-Python
+Computer Vision - Object Tracking with OpenCV and Python

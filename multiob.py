@@ -36,7 +36,7 @@ if __name__ == '__main__':
         print(ta)
        
     trackerType = 'MOSSE'
-    cap = cv2.VideoCapture('Video/Vehicles.mp4')
+    cap = cv2.VideoCapture(0)
     success,frame = cap.read()
     if not success:
         print('Cannot read the video')

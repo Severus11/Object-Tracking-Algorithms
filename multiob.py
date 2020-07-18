@@ -1,23 +1,9 @@
 import cv2
 import sys
 from random import randint
+tracker_types  = ['BOOSTING','MIL','KCF','TLD','MEADIANFLOW','GOTURN','MOSSE','CSRT']
 
-
-# Tracker Types
-tracker_types  = ['BOOSTING',
-                 'MIL',
-                 'KCF',
-                 'TLD',
-                 'MEADIANFLOW',
-                 'GOTURN',
-                 'MOSSE',
-                 'CSRT']
-
-# Define trackers by name
 def tracker_name(tracker_type):
-    
-
-    # Create trackers by name with if statement
     if tracker_type== tracker_types[0]:
         tracker = cv2.TrackerBoosting_create()
     elif tracker_type== tracker_types[1]:
@@ -35,14 +21,12 @@ def tracker_name(tracker_type):
     elif tracker_type== tracker_types[7]:
         tracker = cv2.TrackerCSRT_create()    
 
-    # else statement
     else:
         tracker = None
         print('No tracker found')
         print('Choose from these trackers: ')
         for tr in tracker_types:
             print(tr)
-    # return
     return tracker
 
 if __name__ == '__main__':
@@ -52,23 +36,12 @@ if __name__ == '__main__':
         print(ta)
        
     trackerType = 'MOSSE'
-
-
-    # Create a video capture
     cap = cv2.VideoCapture('Video/Vehicles.mp4')
-    
-    # Read first frame
     success,frame = cap.read()
-    
-    # Quit if failure
     if not success:
         print('Cannot read the video')
-    
-    # Select boxes and colors
     rects=[]
     colors=[]
-
-    # While loop
     while True:
     
         # draw rectangles, select ROI, open new window

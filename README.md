@@ -3,8 +3,6 @@ These are a collection of algorithms which can be efficiently used to track obje
 
 [![Made with Python](https://img.shields.io/badge/Made%20with%20-Python-yellow?style=for-the-badge&logo=python)](http://www.cplusplus.com/)
 [![LinkedIn-profile](https://img.shields.io/badge/LinkedIn-Parthsarthi-blue?style=for-the-badge&logo=LinkedIn)](https://www.linkedin.com/in/parthsarthi-gupta-265b9816a)
-
-
 [![Python](https://img.shields.io/badge/Python-version%203.7.5-green?style=for-the-badge&logo=Python)](http://www.python.org)
 [![OpenCV 4.3.0](https://img.shields.io/badge/Framework-OpenCV-orange?style=for-the-badge&logo=data:png;base64,)](https://pypi.org/project/opencv-python/)
 
